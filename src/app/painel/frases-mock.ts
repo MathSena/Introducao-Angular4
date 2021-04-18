@@ -1,6 +1,6 @@
 import {Frase} from '../shared/frase.model'
 
-const FRASES: Frase[]= [
+export const FRASES: Frase[]= [
     {fraseEng: "You say goodbye and I say hello, Hello hello, I don't know why you say goodbye,", frasePtBr: 'Eu digo adeus e você oi, Olá,Olá, eu não sei como você diz adeus'},
     {fraseEng: "I know I'll often stop and think about them, In my life I'll love you more", frasePtBr: 'Eu sei que sempre vou parar e pensar neles, na minha vida, te amarei mais'},
     {fraseEng: 'I wanna hold your hand', frasePtBr: 'Eu quero segurar a sua mão'},

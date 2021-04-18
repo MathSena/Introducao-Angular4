@@ -11,16 +11,13 @@ export class PainelComponent implements OnInit {
 
   public frases: Frase[] = FRASES
   public instrucao: string = 'Traduza a frase'
-  public resposta: string
+  public resposta: string = ''
   public rodada: number = 0
   public rodadaFrase: Frase
-
   public progresso: number = 0
 
-
   constructor() {
-    this.rodadaFrase = this.frases[this.rodada]
-    console.log(this.rodadaFrase)
+    this.atualizarRodada()
   }
 
   ngOnInit() {
@@ -35,14 +32,29 @@ export class PainelComponent implements OnInit {
     // console.log('Verificar resposta: ', this.resposta)
     if (this.rodadaFrase.frasePtBr == this.resposta) {
       alert('A tradução está correta.')
-      this.rodada++
-      this.rodadaFrase = this.frases[this.rodada]
 
+      //Incrementa rodada
+      this.rodada++
+      
+      //Atualiza o objeto da rodada
+      this.atualizarRodada()
+
+      //Atualiza Progresso
       this.progresso = this.progresso + (100 / this.frases.length)
+
+      // Limpar a respota
       
     } else {
       alert('A tradução está errada')
     }
+
+  }
+  
+  public atualizarRodada():void{
+    // Define a frase da rodada com base em alguma lógica
+    this.rodadaFrase = this.frases[this.rodada]
+    // Limpar a respota
+    this.resposta=""
 
   }
 }

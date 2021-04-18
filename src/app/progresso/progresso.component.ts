@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProgressoComponent implements OnInit {
   /* @Input é property binding passando de pai para filho */
-  @Input() public progresso: string = '20%'
+  @Input() public progresso: string = '25%'
   constructor() { }
 
   ngOnInit() {

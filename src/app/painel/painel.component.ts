@@ -26,23 +26,21 @@ export class PainelComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(){
-    
+
   }
 
   public atualizarResposta(resposta: Event): void {
     this.resposta = (<HTMLInputElement>resposta.target).value
-    // console.log(this.resposta)
   }
 
   public verificarResposta(): void {
-    // console.log('Verificar resposta: ', this.resposta)
     if (this.rodadaFrase.frasePtBr == this.resposta) {
 
       //Incrementa rodada
       this.rodada++
 
       // Informando vitória
-      if(this.rodada === 5){
+      if(this.rodada === 4){
         this.encerrarJogo.emit('vitoria')
   
       }

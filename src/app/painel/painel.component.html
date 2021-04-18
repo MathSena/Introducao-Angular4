@@ -1,31 +1,43 @@
-
 <div class="container">
     <div class="jumbotron">
         <div class="row">
-            <div class="col-sm-6"><app-progresso></app-progresso></div>
+            <div class="col-sm-6">
+                <!-- 
+                Variavel progresso de Painel realizando property binding
+                com o componente Progresso na variavel progresso, exemplificando:
+                [Componente_que_vai_receber_FILHO] = "Componente_que_vai_enviar_PAI"    
+                -->
+                <app-progresso [progresso]="progresso"></app-progresso>
+            </div>
             <div class="col-sm-6">
                 <div class="d-flex justify-content-end">
-                <app-tentativas></app-tentativas></div>
+                    <app-tentativas></app-tentativas>
+                </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col">
                 <h6>{{instrucao}}</h6>
-                <p>{{frases[0].fraseEng}}</p>
+                <p>{{rodadaFrase.fraseEng}}</p>
 
                 <div class="form-group">
-                    <textarea class="form-control" id="" rows="3"
-                    (input)="atualizarResposta($event)"></textarea>
+                    <textarea 
+                    rows="3" 
+                    class="form-control" 
+                    (input)="atualizarResposta($event)"
+                    ></textarea>
                 </div>
+
             </div>
         </div>
+
         <div class="row">
             <div class="col">
                 <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-success">Verificar</button>
+                    <button type="button" class="btn btn-primary" (click)='verificarResposta()'>Verificar</button>
                 </div>
-                
             </div>
         </div>
-  </div>
+    </div>
 </div>

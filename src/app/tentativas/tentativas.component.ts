@@ -13,7 +13,6 @@ export class TentativasComponent implements OnInit, OnChanges{
   public coracoes: Coracao[]=[
     new Coracao(true),new Coracao(true),new Coracao(true)
   ]
-
   constructor() {
     console.log(this.coracoes)
    }

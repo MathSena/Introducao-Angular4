@@ -1,9 +1,10 @@
 import {Frase} from '../shared/frase.model'
 
+
 export const FRASES: Frase[]= [
-    {fraseEng: "You say goodbye and I say hello, Hello hello, I don't know why you say goodbye", frasePtBr: 'Eu digo adeus e você oi, Olá,Olá, eu não sei como você diz adeus'},
-    {fraseEng: "I know I'll often stop and think about them, In my life I'll love you more", frasePtBr: 'Eu sei que sempre vou parar e pensar neles, na minha vida, te amarei mais'},
-    {fraseEng: 'I wanna hold your hand', frasePtBr: 'Eu quero segurar a sua mão'},
-    {fraseEng: "Here comes the sun, here comes the sun, It's all right", frasePtBr: 'Lá vem o sol, lá vem o sol, e está tudo bem'},
-    {fraseEng: "Hey, Jude, don't make it bad, Take a sad song and make it better", frasePtBr: 'Hey Jude, não piore as coisas, pegue uma canção triste e faça melhor'}
+    {fraseEng: "I have a dream", frasePtBr: 'Eu tenho um sonho'},
+    {fraseEng: "Yes, we can", frasePtBr: 'Sim, nós podemos'},
+    {fraseEng: 'Be the change you want to see in the world', frasePtBr: 'Seja a mudança que você quer ver no mundo'},
+    {fraseEng: "Chose a job you love, and you will never have to work a day in your life", frasePtBr: 'Escolha um trabalho que você ame e nunca terá que trabalhar um dia na sua vida'},
+    {fraseEng: "A winner is a dreamer who never gives up", frasePtBr: 'Um vencendor é um sonhandor que nunca desiste'}
 ]

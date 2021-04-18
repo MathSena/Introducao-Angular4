@@ -41,8 +41,6 @@ export class PainelComponent implements OnInit {
 
       //Atualiza Progresso
       this.progresso = this.progresso + (100 / this.frases.length)
-
-      // Limpar a respota
       
     } else {
       alert('A tradução está errada')
